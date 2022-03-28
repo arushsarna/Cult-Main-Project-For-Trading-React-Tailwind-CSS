@@ -1,9 +1,13 @@
+import { useState } from "react";
+import Calculate from "./calculate";
 import Home from "./Home";
 
 function App() {
-  return (<div>
-    <Home />
-  </div>
+
+  return (
+    <div>
+      <Calculate />
+    </div>
   );
 }
 
