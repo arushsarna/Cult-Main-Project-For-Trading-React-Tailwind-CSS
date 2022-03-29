@@ -4,6 +4,7 @@ import setting from '../assets/setting.png'
 import trading from '../assets/trading.png'
 import cult from '../assets/cultnew.png'
 function NavBar() {
+
     return (<div className=" h-2/3 top-20 absolute" >
         <div className=" text-xs text-cyan-800">s</div>
         <div className="w-20 ml-2  bg-gray-900   h-full text-white rounded-xl flex flex-col ">

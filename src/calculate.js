@@ -20,7 +20,7 @@ export default function Calculate() {
         returns = (parseInt(lotSize) * parseInt(lot) * parseInt(risk)) * parseInt(time) / 100 + parseInt(investment)
         returns1 = (parseInt(lotSize) * parseInt(lot) * parseInt(risk)) * parseInt(time) / 200 + parseInt(investment)
         returns2 = (parseInt(lotSize) * parseInt(lot) * parseInt(risk)) * parseInt(time) / 400 + parseInt(investment)
-        
+
 
         setInvestment(returns);
 
