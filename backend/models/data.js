@@ -1,27 +1,32 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const timeElapsed = Date.now();
 const today = new Date(timeElapsed);
 const dataSchema = mongoose.Schema({
+  date: {
+    type: String,
 
-    date: {
-        type: String,
+    required: true,
+    default: today.toLocaleDateString(),
+  },
+  profit: {
+    type: String,
+    default: "",
+  },
+  capital: {
+    type: String,
+    default: "",
+  },
+  drawdown: {
+    type: String,
+    default: "",
+  },
+  email: {
+    type: String,
+  },
+  //   array: {
+  //     type: String,
+  //     default: "",
+  //   },
+});
 
-        required: true,
-        default: today.toLocaleDateString()
-    },
-    profit: {
-        type: String,
-        required: true
-    },
-    capital: {
-        type: String,
-        required: true
-    },
-    drawdown: {
-        type: String,
-        required: true
-    }
-})
-
-
-module.exports = mongoose.model('Data', dataSchema);
+module.exports = mongoose.model("Data", dataSchema);
