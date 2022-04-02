@@ -20,7 +20,7 @@ export default function InputData() {
     e.preventDefault();
 
     const { date, profit, capital, drawdown } = user;
-    const res = await fetch("/data/update", {
+    const res = await fetch("/data/patch", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -40,7 +40,7 @@ export default function InputData() {
     }
   };
   return (
-    <div className="flex justify-center items-center h-screen ">
+    <div className="flex justify-center  h-screen ">
       <div className=" flex flex-col h-2/3 w-1/2 items-center  text-white">
         Login
         <div className="mt-20">

@@ -9,16 +9,16 @@ const dataSchema = mongoose.Schema({
     default: today.toLocaleDateString(),
   },
   profit: {
-    type: String,
-    default: "",
+    type: Array,
+    default: [],
   },
   capital: {
-    type: String,
-    default: "",
+    type: Array,
+    default: [],
   },
   drawdown: {
-    type: String,
-    default: "",
+    type: Array,
+    default: [],
   },
   email: {
     type: String,
